@@ -1,0 +1,71 @@
+
+body{
+    font-family: sans-serif;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.board{
+    width: 500px;
+    height: 500px;
+    display: grid;
+    cursor: pointer;
+    border: 6px solid black;
+    margin-top: 10px;
+}
+.errorMessage{
+    display: none;
+}
+
+.button{
+    height: 40px;
+    width: 80px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+}
+.blackBtn:hover{
+    border: 3px solid black;
+    background-color: black;
+    color: white;
+}
+.greyBtn:hover{
+    border: 3px solid grey;
+    background-color: grey;
+    color: white;
+}
+.earaserBtn:hover{
+    border: 3px solid white;
+    background-color: white;
+    color: black;
+    opacity: 0.5;
+}
+.randomBtn:hover{
+    border: 3px solid ;
+    background: linear-gradient(83.84deg, #0088FF 6.87%, #A033FF 26.54%, #FF5C87 58.58%);
+    color: black;
+    color: white;
+}
+.setSizeBtn:hover{
+    border: 3px solid limegreen;
+    margin-bottom: 5px;
+}
+.resetBtn:hover{
+    border: 3px solid red;
+    background-color: red;
+    color: white ;
+}
+
+#sizeOfboard{
+    height: 30px;
+    border-radius: 9px;
+}
+
+.boardSizing,.buttons{
+   text-align: center;
+   margin: 10px;
+}

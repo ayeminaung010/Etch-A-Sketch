@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchPad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title"><h1>SketchPad</h1></div>
+        <div class="mode">Mode: Coloring</div>
+        <div class="content">
+            <div class="board"></div>
+
+            <div class="buttons">
+                <button onclick="changeColor('black')" class="button blackBtn">Black</button>
+                <button onclick="changeColor('grey')" class="button greyBtn">Grey</button>
+                <button onclick="changeColor('white')" class="button earaserBtn">Earaser</button>
+                <button onclick="changeRandom()" class="button randomBtn">Random</button>
+                <button onclick="Reset()" class="button resetBtn">Reset</button>
+            </div>
+            <div class="boardSizing">
+                <input type="number" placeholder="Size of board" value="16" onchange="changeSize(this.value)"  id="sizeOfboard">
+              
+                <button class="setSize button setSizeBtn">Set Size</button>
+                <br>
+                <small style="color: red;" class="errorMessage">Must be 2 and 100 Size</small>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
