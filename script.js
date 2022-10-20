@@ -44,7 +44,7 @@ function changeColor(input){
     }
 }
 
-let RandomColor = ['green','pink','blue','red','yellow','lightblue','grey'];
+let RandomColor = ['green','pink','blue','red','yellow','lightblue','grey','orange','purple','brown'];
 
 // random color 
 function changeRandom(){
